@@ -4,7 +4,7 @@ import express from 'express'
 export const app = express()
 
 // view engine setup
-app.use('/public', express.static(path.join(__dirname, '/../public')))
+app.use('/public', express.static(path.join(__dirname, '/public')))
 
 const address = process.env.OPENSHIFT_NODEJS_IP || 'localhost'
 const port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 5000
